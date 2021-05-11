@@ -14,7 +14,7 @@ Hasilkan Sesi String Pyrogram Menggunakan bot ini.
 - APP_NAME
   - Heroku App Name.
 - BOT_TOKEN
-  - Telegram Bot Token from [here](https://t.me/BotFather).
+  - Telegram Bot Token dari [here](https://t.me/BotFather).
 
 ## Deploy Now:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AbirHasan2005/TG-String-Session/tree/main)
@@ -27,7 +27,7 @@ Hasilkan Sesi String Pyrogram Menggunakan bot ini.
 - [Abir Hasan](https://github.com/AbirHasan2005)
 
 ### Note:
-Ini pertama kali dibuat oleh [Krishna Singhal](https://github.com/Krishna-Singhal). Terima kasih banyak untuk. [I](https://github.com/AbirHasan2005) just made some little changes to make the bot more good looking. Also [I](https://github.com/AbirHasan2005) added [Deploy to Heroku](https://github.com/AbirHasan2005/TG-String-Session#deploy-now) Button for easy Deploies. I don't own this repo fully.
+Ini pertama kali dibuat oleh [Krishna Singhal](https://github.com/Krishna-Singhal). Terima kasih banyak untuk. [I](https://github.com/AbirHasan2005) hanya membuat sedikit perubahan untuk membuat bot lebih terlihat bagus. [I](https://github.com/AbirHasan2005) added [Deploy to Heroku](https://github.com/jokokendi/TG-String-Session#deploy-now) Button for easy Deploies. I don't own this repo fully.
 
 ## Follow on:
 <p align="left">
