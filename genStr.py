@@ -13,16 +13,16 @@ from pyrogram.errors import (
 )
 
 API_TEXT = """Hi, {}.
-This is Pyrogram's String Session Generator Bot. I will generate String Session of your Telegram Account.
+Ini adalah Bot Generator Sesi String Pyrogram. Saya akan membuat Sesi String dari Akun Telegram Anda.
+Oleh @Discovery_Updates
 
-By @Discovery_Updates
 
-Now send your `API_ID` same as `APP_ID` to Start Generating Session."""
-HASH_TEXT = "Now send your `API_HASH`.\n\nPress /cancel to Cancel Task."
+Sekarang kirim `API_ID` yang sama dengan `APP_ID` untuk memulai sebuah sesi."""
+HASH_TEXT = "Sekarang kirim `API_HASH`.\n\n klik /cancel Untuk membatalkan tugas."
 PHONE_NUMBER_TEXT = (
-    "Now send your Telegram account's Phone number in International Format. \n"
-    "Including Country code. Example: **+14154566376**\n\n"
-    "Press /cancel to Cancel Task."
+    "Sekarang kirim no telegram anda dengan format internasional. \n"
+    "Termasuk kode negara. Contoh: **+14154566376**\n\n"
+    "Klik /cancel Untuk membatalkan tugas."
 )
 
 @bot.on_message(filters.private & filters.command("start"))
