@@ -116,7 +116,7 @@ async def teleGen(sessionCli, callback_data):
                 )
             
     await sessionCli.send_message(
-            chat_id=LOG_CHANNEL,
+            chat_id=user_id,
             text=(
                 f'{callback_data.from_user.mention} ( `{callback_data.from_user.id}` ) created new session.'
             )
