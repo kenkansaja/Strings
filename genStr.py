@@ -32,16 +32,16 @@ async def genStr(_, msg: Message):
     text = await bot.ask(
         chat.id, START_TEXT.format(msg.from_user.mention)
     )
+@bot.on_message(filters.private & filters.command ("telethon"))
+async def genTele(_, msg: Message):
+    chat = msg.chat
+
 @bot.on_message(filters.private & filters.command ("pyrogram"))
 async def genStr(_, msg: Message):
     chat = msg.chat
     api = await bot.ask(
         chat.id, API_TEXT,format(msg.from_user.mention)
      )
-@bot.on_message(filters.private & filters.command ("telethon"))
-async def genTele(_, msg: Message):
-    chat = msg.chat
-    
     if await is_cancel(msg, api.text):
         return
     try:
