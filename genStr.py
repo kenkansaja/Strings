@@ -13,8 +13,8 @@ from pyrogram.errors import (
 )
 
 API_TEXT = """Hi, {}.
-Mau cari strings ya ngab walah paskali kamu datang ke sini ngab\n
-Oleh @kenkanasw
+Mau cari strings ya ngab walah pas kali kamu datang ke sini ngab\n
+Oleh @kenkanasw kalau mau yang telethon klik /telethon
 
 
 Kirim api nya ngab `API_ID` yang sama dengan `APP_ID` untuk dapatkan string ngab."""
