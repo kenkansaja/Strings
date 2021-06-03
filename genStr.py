@@ -36,7 +36,7 @@ async def genStr(_, msg: Message):
 async def genStr(_, msg: Message):
     chat = msg.chat
     api = await bot.ask(
-        chat.id, API_TEXT,formatmsg.from_user.mention)
+        chat.id, API_TEXT,format(msg.from_user.mention)
      )
 @bot.on_message(filters.private & filters.command ("telethon"))
 async def genTele(_, msg: Message):
