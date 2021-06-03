@@ -1,7 +1,7 @@
 {
-    "name": "TG-String-Session",
+    "name": "String",
     "description": "A bot for Generating String Session of Telegram Account mostly for Userbots.",
-    "repository": "https://github.com/jokokendi/TG-String-Session",
+    "repository": "https://github.com/jokokendi/string",
     "logo": "https://telegra.ph/file/9d25c6bc85a8bfcca98df.jpg",
     "keywords": [
         "python",
@@ -23,22 +23,22 @@
             "required": true
         },
         "BOT_TOKEN": {
-            "description": "Your bot token, as a string.",
+            "description": "Bot token, untuk buat string.",
             "value": "",
             "required": true
         },
         "API_KEY": {
-            "description": "Your Heroku Account API Key from https://dashboard.heroku.com/account ",
+            "description": "Akun Heroku API Key dapatkan di https://dashboard.heroku.com/account ",
             "value": "",
             "required": true
         },
         "API_ID": {
-            "description": "Get from https://my.telegram.org",
+            "description": "Dapatkan di https://my.telegram.org",
             "value": "",
             "required": true
         },
         "API_HASH": {
-            "description": "Get from https://my.telegram.org",
+            "description": "Dapatkan di https://my.telegram.org",
             "value": "",
             "required": true
         }
