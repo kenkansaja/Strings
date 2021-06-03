@@ -18,7 +18,7 @@ Mau cari strings ya ngab walah paskali kamu datang ke sini ngab\n
 Oleh @kenkanasw"""
 
 
-API_TEXT = "Kirim api nya ngab `API_ID` yang sama dengan `APP_ID` untuk dapatkan string ngab."
+API_TEXT = "Hi, {}. Kirim api nya ngab `API_ID` yang sama dengan `APP_ID` untuk dapatkan string ngab."
 HASH_TEXT = "Sekarang kirim `API_HASH`.\n\n klik /cancel Untuk membatalkan tugas."
 PHONE_NUMBER_TEXT = (
     "Sekarang kirim no telegram mu ngab dengan format internasional.\n"
@@ -36,7 +36,7 @@ async def genStr(_, msg: Message):
 async def genStr(_, msg: Message):
     chat = msg.chat
     api = await bot.ask(
-        chat.id, API_TEXT
+        chat.id, API_TEXT,formatmsg.from_user.mention)
      )
 @bot.on_message(filters.private & filters.command ("telethon"))
 async def genTele(_, msg: Message):
