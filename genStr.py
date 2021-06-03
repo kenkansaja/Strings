@@ -56,7 +56,7 @@ async def genStr(_, msg: Message):
         confirm = await bot.ask(chat.id, f'`yakin "{phone}" sudah benar? (y/n):` \n\nKetik: `y` (untuk ya)\nKetik: `n` (untuk No)')
         if await is_cancel(msg, confirm.text):
             return
-        if "y" in confirm.text:
+        if "y", "Y" in confirm.text:
             break
     try:
         client = Client("my_account", api_id=api_id, api_hash=api_hash)
