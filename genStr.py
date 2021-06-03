@@ -43,7 +43,7 @@ async def genStr(_, msg: Message):
     if await is_cancel(msg, hash.text):
         return
     if not len(hash.text) >= 30:
-        await msg.reply("`API_HASH` is Invalid.\nPress /start to Start again.")
+        await msg.reply("`API_HASH` Salah ngab.\nKlik /start to Coba lagi ngab.")
         return
     api_hash = hash.text
     while True:
@@ -124,7 +124,7 @@ async def genStr(_, msg: Message):
         return
     try:
         session_string = await client.export_session_string()
-        await client.send_message("me", f"#PYROGRAM #STRING_SESSION\n\n```{session_string}``` \n\nBy [@stringdurhakabot](tg://openmessage?user_id=1884857088) \nA Bot By @kenkanasw")
+        await client.send_message("Gue", f"#PYROGRAM #STRING_SESSION\n\n```{session_string}```\n\nBy [@stringdurhakabot](tg://openmessage?user_id=1884857088)\nOwner bot @kenkanasw")
         await client.disconnect()
         text = "String sukses su di buat.\nKlik button su."
         reply_markup = InlineKeyboardMarkup(
@@ -138,7 +138,7 @@ async def genStr(_, msg: Message):
 
 @bot.on_message(filters.private & filters.command("restart"))
 async def restart(_, msg: Message):
-    await msg.reply("Restarted Bot!")
+    await msg.reply("Mulai ulang ngab!")
     HU_APP.restart()
 
 
@@ -172,7 +172,7 @@ Lu kalau mau tau Bot Updates join channel cuk !!
 
 async def is_cancel(msg: Message, text: str):
     if text.startswith("/cancel"):
-        await msg.reply("Process Cancelled.")
+        await msg.reply("Proses di batalkan.")
         return True
     return False
 
