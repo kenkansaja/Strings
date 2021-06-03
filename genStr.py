@@ -3,6 +3,7 @@ import asyncio
 from bot import bot, HU_APP
 from pyromod import listen
 from asyncio.exceptions import TimeoutError
+from genTele import CMD telethon
 
 from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
