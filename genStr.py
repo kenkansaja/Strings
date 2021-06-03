@@ -39,6 +39,7 @@ async def genTele(_, msg: Message):
 @bot.on_message(filters.private & filters.command ("pyrogram"))
 async def genStr(_, msg: Message):
     chat = msg.chat
+    API_ID=api
     api = await bot.ask(
         chat.id, API_TEXT,format(msg.from_user.mention)
      )
