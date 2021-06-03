@@ -42,7 +42,7 @@ async def teleGen(sessionCli, callback_data):
     ):
         await sessionCli.send_message(
             chat_id=user_id,
-            text='API_ID should be integer and valid in range limit.'
+            text = 'API_ID bilangan bulat cuk bukan huruf.'
         )
         return
     
