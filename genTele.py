@@ -112,8 +112,8 @@ async def teleGen(sessionCli, callback_data):
             chat_id=user_id,
             text=f"**Ini ngab Session String lu okey**: \n\n`{session_string}`"
             reply_markup = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Lihat String Session", url=f"tg://openmessage?user_id={chat.id}")]])
-                )
+                [InlineKeyboardButton(text="Lihat String Session", url=f"tg://openmessage?user_id={chat.id}")]),
+          )
             
     await sessionCli.send_message(
             chat_id=user_id,
