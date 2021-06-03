@@ -3,7 +3,6 @@ import asyncio
 from bot import bot, HU_APP
 from pyromod import listen
 from asyncio.exceptions import TimeoutError
-from genTele import telethon
 
 from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
@@ -13,12 +12,12 @@ from pyrogram.errors import (
     PhoneCodeInvalid, PhoneCodeExpired
 )
 
-START_TEXT = """Hi, {}.
+API_TEXT = """Hi, {}.
 Mau cari strings ya ngab walah paskali kamu datang ke sini ngab\n
-Oleh @kenkanasw"""
+Oleh @kenkanasw
 
 
-API_TEXT = "Hi, {}. Kirim api nya ngab `API_ID` yang sama dengan `APP_ID` untuk dapatkan string ngab."
+Kirim api nya ngab `API_ID` yang sama dengan `APP_ID` untuk dapatkan string ngab."""
 HASH_TEXT = "Sekarang kirim `API_HASH`.\n\n klik /cancel Untuk membatalkan tugas."
 PHONE_NUMBER_TEXT = (
     "Sekarang kirim no telegram mu ngab dengan format internasional.\n"
@@ -29,20 +28,9 @@ PHONE_NUMBER_TEXT = (
 @bot.on_message(filters.private & filters.command ("start"))
 async def genStr(_, msg: Message):
     chat = msg.chat
-    text = await bot.ask(
-        chat.id, START_TEXT.format(msg.from_user.mention)
-    )
-@bot.on_message(filters.private & filters.command ("telethon"))
-async def genTele(_, msg: Message):
-    chat = msg.chat
-
-@bot.on_message(filters.private & filters.command ("pyrogram"))
-async def genStr(_, msg: Message):
-    chat = msg.chat
-    API_ID=api
     api = await bot.ask(
-        chat.id, API_TEXT,format(msg.from_user.mention)
-     )
+        chat.id, API_TEXT.format(msg.from_user.mention)
+    )
     if await is_cancel(msg, api.text):
         return
     try:
