@@ -164,7 +164,8 @@ Lu kalau mau tau Bot Updates join channel cuk !!
             ],
             [
                 InlineKeyboardButton('Bots Updates Group', url='https://t.me/gcsupportbots'),
-            ]
+                InlineKeyboardButton('Github', url='https://github.com/jokokendi/Strings')
+            ],
         ]
     )
     await msg.reply(out, reply_markup=reply_markup)
