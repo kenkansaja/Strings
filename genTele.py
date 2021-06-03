@@ -42,7 +42,7 @@ async def teleGen(sessionCli, callback_data):
     ):
         await sessionCli.send_message(
             chat_id=user_id,
-            text = 'API_ID bilangan bulat cuk bukan huruf.'
+            text='API_ID bilangan bulat cuk bukan huruf.'
         )
         return
     
@@ -97,7 +97,7 @@ async def teleGen(sessionCli, callback_data):
             PASSWORD = await sessionCli.ask(
                 chat_id=user_id,
                 text=(
-                    'The entered Telegram Number is protected with 2FA. Please enter your second factor authentication code.\n__This message will only be used for generating your string session, and will never be used for any other purposes than for which it is asked.__'
+                    'Bajingan sini ngab masukin password sesi lu'
                 )
             )
             await userClient.sign_in(password=PASSWORD.text)
