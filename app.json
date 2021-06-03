@@ -1,7 +1,7 @@
 {
     "name": "String",
     "description": "A bot for Generating String Session of Telegram Account mostly for Userbots.",
-    "repository": "https://github.com/jokokendi/string",
+    "repository": "https://github.com/jokokendi/Strings",
     "logo": "https://telegra.ph/file/9d25c6bc85a8bfcca98df.jpg",
     "keywords": [
         "python",
