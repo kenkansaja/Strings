@@ -1,6 +1,8 @@
 # TG-String-Session
 Hasilkan Sesi String Pyrogram Menggunakan bot ini.
 
+<a href="https://t.me/kenkanasw"><img src="https://img.shields.io/badge/Telegram-Owner-blue.svg?logo=telegram"></a>
+
 ## Demo Bot:
 <a href="https://t.me/Stringdurhakabot"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
 
