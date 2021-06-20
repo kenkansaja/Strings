@@ -1,5 +1,4 @@
 import asyncio
-import genTele
 
 from bot import bot, HU_APP
 from pyromod import listen
