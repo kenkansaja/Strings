@@ -160,11 +160,11 @@ Lu kalau mau tau Bot Updates join channel cuk !!
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('Channel', url='https://t.me/levinachannel'),
+                InlineKeyboardButton('Channel', url='https://t.me/musikkuchannel'),
                 InlineKeyboardButton('Developer', url='https://t.me/kenkanasw')
             ],
             [
-                InlineKeyboardButton('Bots Updates Group', url='https://t.me/gcsupportbots'),
+                InlineKeyboardButton('Bots Updates Group', url='https://t.me/musikkugroup'),
                 InlineKeyboardButton('Github', url='https://github.com/jokokendi/Strings')
             ],
         ]
