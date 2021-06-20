@@ -8,7 +8,7 @@ from telethon.sessions import StringSession
 
 @bot.on_message(filters.private & filters.command ("teleton"))
 async def string_session(_, msg: Message):
-print("""Silakan masuk ke my.telegram.org atau @Kenkanrobot
+await reply_text("""Silakan masuk ke my.telegram.org atau @Kenkanrobot
 Masuk menggunakan akun Telegram Anda
 Klik pada Alat Pengembangan API
 Buat aplikasi baru, dengan memasukkan detail yang diperlukan
