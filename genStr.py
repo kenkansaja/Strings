@@ -3,7 +3,7 @@ import asyncio
 from bot import bot, HU_APP
 from pyromod import listen
 from asyncio.exceptions import TimeoutError
-import string_session
+
 from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import (
@@ -14,7 +14,7 @@ from pyrogram.errors import (
 
 API_TEXT = """Hi, {}.
 Mau cari strings ya ngab walah pas kali kamu datang ke sini ngab\n
-Oleh @kenkanasw kalau mau yang telethon klik /telethon
+Oleh @kenkanasw
 
 
 Kirim api nya ngab `API_ID` yang sama dengan `APP_ID` untuk dapatkan string ngab."""
