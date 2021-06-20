@@ -165,7 +165,7 @@ Lu kalau mau tau Bot Updates join channel cuk !!
             ],
             [
                 InlineKeyboardButton('Bots Updates Group', url='https://t.me/musikkugroup'),
-                InlineKeyboardButton('Github', url='https://github.com/jokokendi/Strings')
+                InlineKeyboardButton('Github', url='https://github.com/kenkannih/Strings')
             ],
         ]
     )
