@@ -53,7 +53,6 @@ async def genStr(_, msg: Message):
         if await is_cancel(msg, number.text):
             return
         phone = number.text
-            break
     try:
         client = Client("my_account", api_id=api_id, api_hash=api_hash)
     except Exception as e:
