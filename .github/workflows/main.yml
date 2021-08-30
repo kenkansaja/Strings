@@ -1,0 +1,2 @@
+- name: Setup Railway CLI
+  uses: MadeByThePinsHub/setup-railway-cli-action@v0.1.0
